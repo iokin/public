@@ -1,0 +1,14 @@
+#
+#
+#
+RewriteEngine On
+
+# -----------------------------------------------------------------------------
+# Engine sites
+# -----------------------------------------------------------------------------
+RewriteCond %{HTTP_HOST} !^www(.*)$
+RewriteRule ^$                                          /index.php [L,QSA,NS,NC,NE]
+RewriteRule ^bookingstep1$                              /bookingstep1.xx.html [L,QSA,NS,NC,NE]
+RewriteRule ^bookingstep1/$                              /bookingstep1.xx.html [L,QSA,NS,NC,NE]
+RewriteRule ^bookingstep3$                              /reservation_confirmation.html [L,QSA,NS,NC,NE]
+RewriteRule ^bookingstep3/$                              /reservation_confirmation.html [L,QSA,NS,NC,NE]

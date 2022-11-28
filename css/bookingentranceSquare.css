@@ -1,0 +1,233 @@
+/*--- Principio Reset Styles ---*/
+#mirai_bookentrance div, #mirai_bookentrancepre, #mirai_bookentrance form, #mirai_bookentrance fieldset, legend, #mirai_bookentrance input, #mirai_bookentrance textarea, #mirai_bookentrance p, #mirai_bookentrance blockquote, #mirai_bookentrance th, #mirai_bookentrance td {
+    margin:0;
+    padding:0;
+}
+#mirai_bookentrance fieldset {
+    border:0;
+}
+#mirai_bookentrance input, #mirai_bookentrance textarea, #mirai_bookentrance select {
+    font-family:inherit;
+    font-weight:inherit;
+    font-size:inherit;
+}
+#mirai_bookentrance input, #mirai_bookentrance textarea, #mirai_bookentrance select {
+ *font-size:100%;
+}
+/*--- Fin Reset Styles ---*/
+/*--- Principio Contenedor del motor de reservas ---*/
+#mirai_be0, #mirai_be2, #mirai_be0 input, #mirai_be0 select { /*#mirai_be2, #mirai_be0 input, #mirai_be0 select para que se vea la misma letra en IE6 y IE7*/
+    font-family: Verdana;
+    font-size: 13px;
+}
+#mirai_be0 {
+    position:relative;
+    width:13.7em;
+    height:11.5em;
+}
+/*--- Fin Contenedor del motor de reservas ---*/
+/*--- Principio Posición de elementos ---*/
+#mirai_be1, #mirai_be2, #mirai_be3, #mirai_be4, #mirai_be5, #mirai_be6, #mirai_be7, #mirai_be8, #mirai_be10 {
+    position:absolute; /*  Tipo de posición para todos los elementos */
+}
+#mirai_be1, #mirai_be3 { /* Espacio a la izquierda para "Entrada" y "Noches" y margin para igualar horizontalmente con textos de los input */
+    left:0;
+    margin-top:0.25em;
+}
+#mirai_be2, #mirai_be4, #mirai_be6 { /* Espacio a la izquierda para "Input Entrada", "Input Noches", y "Input Codigo Promocional" */
+    left:6.5em;
+}
+#mirai_be7, #mirai_be8 { /* Espacio a la izquierda para "Input Reservar", "Input Ver/Cancelar" */
+    left:0;
+}
+#mirai_be1, #mirai_be2 { /* Espacio superior para "Entrada" y "Input Entrada" */
+    top: 0;
+}
+#mirai_be3, #mirai_be4 { /* Espacio superior para "Noches" y "Input Noches" */
+    top:2.2em;
+}
+#mirai_be5 { /* Espacio superior y a la izquierda para "Codigo Promocional" */
+    top: 6.15em;
+    left: 0em;
+}
+#mirai_be6 { /* Espacio superior para "Input Codigo promocional" */
+    top:4.6em;
+}
+#mirai_be7 { /* Espacio a la izquierda y superior para "Input Reservar" */
+    top: 6.9em;
+    left:0;
+}
+#mirai_be8 { /* Espacio a la izquierda y superior para "Input Ver/Cancelar" */
+    top: 9.9em;
+    left:0;
+}
+/*--- Fin Posición de elementos ---*/
+/*--- Principio Estilos de Botones y Codigo Promocional ---*/
+#mirai_be2, #mirai_be6 { /* Anchura para "Input Entrada" y "Input Codigo Promocional" */
+    width:7em;
+}
+#mirai_be2, #mirai_be4, #mirai_be6 { /* Estilos "Input Entrada", "Input Noches" y "Input Codigo Promocional" */
+    background-color:#FFFFFE; /* para que el "color" de < slect > en Safari funciona, no se pudede asignar #FFFFFF. Color de letra para Text Inputs */
+    border:1px solid #999;
+    color: #444;
+}
+#mirai_be5 { /*--- Texto "Codigo Promocional" ---*/
+    font-size: 0.75em;
+    line-height: 0.9em;
+    width: 10em;
+}
+#mirai_be7 input { /*--- Boton "Input Reservar" ---*/
+    padding:0.2em 0.8em;
+    overflow: visible; /*--- Eliminar padding horizontal IE6 y IE7 ---*/
+    cursor:pointer;
+    box-sizing:border-box; /*--- Igualar altura ---*/
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+#mirai_be7 input:disabled, #mirai_be7 input[disabled], #mirai_be7 input.btn_disabled {
+    opacity: 0.2;
+    cursor:default;
+    background: #000
+}
+#mirai_be8 { /*--- Boton "Input Ver/Cancelar" ---*/
+    cursor:pointer;
+    text-decoration:underline;
+    color:#00f;
+}
+#mirai_be10 {
+    display:none;
+}
+.departureDate #mirai_be10 {
+    font-size: 0.75em;
+    width: 11em;
+    display:inline;
+}
+/*--- Fin Estilos de Botones y Codigo Promocional ---*/
+/*--- Principio pel posición con la fecha de salida--*/
+.departureDate #mirai_be10 { /* Espacio a la izquierda para label depature */
+    top: 5.6em;
+    left: 8.9em;
+    display:inline;
+}
+.departureDate #mirai_be5 { /* Espacio superior y a la izquierda para "Codigo Promocional" */
+    top: 8.4em;
+    left: 0em;
+}
+.departureDate #mirai_be6 { /* Espacio superior para "Input Codigo promocional" */
+    top:6em;
+}
+.departureDate #mirai_be7 { /* Espacio a la izquierda y superior para "Input Reservar" */
+    top: 8.5em;
+    left:0;
+}
+.departureDate #mirai_be8 { /* Espacio a la izquierda y superior para "Input Ver/Cancelar" */
+    top: 11.5em;
+    left:0;
+}
+/*--- Fin pel posición con la fecha de salida--*/
+/*--- Principio Para que el calendario aparezca siempre encima ---*/
+#ui-datepicker-div {
+    font-size:0.8em;
+    z-index: 1002!important;
+}
+/*--- Fin Para que el calendario aparezca siempre encima ---*/
+
+#m_book, #m_cancellation {
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    display:block;
+}
+#m_book {
+    background: -moz-linear-gradient(top,  #ffffe2 0%, #ffffcc 40%, #fce085 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffe2), color-stop(40%,#ffffcc), color-stop(100%,#fce085)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffe2 0%,#ffffcc 40%,#fce085 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffe2 0%,#ffffcc 40%,#fce085 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffe2 0%,#ffffcc 40%,#fce085 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffe2 0%,#ffffcc 40%,#fce085 100%); /* W3C */
+    font-size:19px;
+    padding:8px; 
+    text-align:center; 
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    border: 1px solid #eecd3f;
+    border-bottom: 1px solid #bf8f24;
+    color: #5b5b5b;
+    font-size:19px;
+    padding:8px; 
+    text-align:center; 
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+#m_book:hover {
+    background: -moz-linear-gradient(top,  #ffffe2 0%, #ffffbc 40%, #f9d770 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffe2), color-stop(40%,#ffffbc), color-stop(100%,#f9d770)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffe2 0%,#ffffbc 40%,#f9d770 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffe2 0%,#ffffbc 40%,#f9d770 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffe2 0%,#ffffbc 40%,#f9d770 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffe2 0%,#ffffbc 40%,#f9d770 100%); /* W3C */
+}
+#m_book:active {
+    border: 1px solid #deca6c;
+    border-top: 1px solid #deca6c;
+    background: -moz-linear-gradient(top,  #f4dd6f 0%, #f8e89a 40%, #f9d770 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffe2), color-stop(40%,#f8e89a), color-stop(100%,#f9d770)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f4dd6f 0%,#f8e89a 40%,#f9d770 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f4dd6f 0%,#f8e89a 40%,#f9d770 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f4dd6f 0%,#f8e89a 40%,#f9d770 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f4dd6f 0%,#f8e89a 40%,#f9d770 100%); /* W3C */
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+    color: #222;
+}
+#m_cancellation {
+    font-size: 13px;
+    color: #dedede;
+    font-weight:300;
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+    background: -moz-linear-gradient(top,  #888,  #575757);
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    padding:3px 10px;
+    margin-top:20px
+}
+#m_cancellation:hover {
+    background: #616161;
+    background: -webkit-gradient(linear, left top, left bottom, from(#757575), to(#4b4b4b));
+    background: -moz-linear-gradient(top,  #757575,  #4b4b4b);
+}
+#m_cancellation:active {
+    color: #fff;
+    border: 1px solid #666;
+    border-top: 1px solid #777;
+    background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#666666));
+    background: -moz-linear-gradient(top,  #575757,  #666666);
+    text-shadow: 0 0 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: inset 0 0 5px 2px #555555, 0 1px 0 0 #cccccc;
+    -webkit-box-shadow: inset 0 0 5px 2px #555555, 0 1px 0 0 #cccccc;
+    -moz-box-shadow: inset 0 0 5px 2px #555555, 0 1px 0 0 #cccccc;
+    box-shadow: inset 0 0 5px 2px #555555, 0 1px 0 0 #cccccc;
+}
+
+#mirai_be4.alert {
+    border: solid 1px red;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.ui-tooltip-alert .ui-tooltip-titlebar,.ui-tooltip-alert .ui-tooltip-content {
+    border-color:#810312;color:#3F060F;
+}
+.ui-tooltip-alert .ui-tooltip-content{
+    background-color:#B39A9B;
+}
+.ui-tooltip-alert .ui-tooltip-titlebar{
+    background-color:#810312;
+}

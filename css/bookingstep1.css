@@ -1,0 +1,586 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+#body {
+    background-image: url("../hacienda-cardenal-detalle-bg.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+
+}
+
+#container {
+    background-image:url(../bg_miraibooking.png);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#summaryElements {
+	top: 200px !important;
+}
+
+#mirai_roomSelectionContainer h2 {
+	font-size: 18px;
+}
+/* start: structure */
+#mirai_roomSelectionContainer {
+	max-width: 1200px;
+	margin: 30px auto;
+}
+/* end: structure */
+/* start: general */
+#roomSelectionContainer, select, input, div.roomtypedetail span,
+	#availableRoomList table.roomdetailBottomTable span {
+	font-family: verdana;
+	font-size: 11px;
+	color: #555;
+}
+
+.mirai_alert {
+	color: #d03741;
+}
+
+.mirai_advantage {
+	color: #397435;
+}
+
+.mirai_note {
+	color: #ffa500;
+}
+
+.mirai_button, .mirai_button:visited {
+	border-bottom-color: #166f27;
+	background-color: #1ba736;
+	color: #FFFFFE;
+}
+
+.mirai_button:hover {
+	background-color: #18832c;
+	color: #FFFFFE;
+}
+
+.mirai_button.selectRoom, .mirai_button.selectRoom:visited {
+	border-bottom-color: #555;
+	background-color: #807e7e;
+	color: #FFFFFE;
+}
+
+.mirai_button.selectRoom:hover {
+	background-color: #333;
+	color: #FFFFFE;
+}
+
+.mirai_button.button_disabled, .mirai_button.button_disabled:hover {
+	background-color: #dedede;
+	color: #bababa;
+}
+
+#mirai_rootTable a, #currencyDropdownTop a span, #mirai_selectionSummary a
+	{
+	color: #3876fa;
+}
+
+#mirai_rootTable a:hover, #currencyDropdownTop a:hover span,
+	#mirai_selectionSummary a:hover, #availableRoomList tr.roomtype.hover p,
+	#availableRoomList tr.roomrate.hover p, #availableRoomList tr.roomtype.hover
+.paxWrapper, #availableRoomList tr.roomrate.hover span,
+	#availableRoomList tr.roomtype.widthdetail:hover p {
+	color: #3876fa;
+}
+
+#availableRoomList tr.roomtype, #availableRoomList tr.roomrate td.col1,
+	#availableRoomList tr.roomrate td.col2, #availableRoomList tr.roomrate td.col4,
+	#availableRoomList td.tdRatesTable {
+	background-color: #E9E8E6;
+}
+
+#availableRoomList tr.roomrate td.col3, #availableRoomList tr.roomrate td.col5
+	{
+	background-color: #F6F6F6;
+}
+
+#availableRoomList tr.hover td, #availableRoomList tr.hover th {
+	background-color: #C3C4BE !important;
+}
+
+#availableRoomList tr.detaildisplayed th, #availableRoomList tr.detaildisplayed td.col1,
+	#availableRoomList tr.detaildisplayed td.col2, #availableRoomList tr.detaildisplayed td.col3,
+	#availableRoomList tr.detaildisplayed td.col4, #availableRoomList tr.detaildisplayed td.col5
+	{
+	background-color: #dedddb;
+}
+
+#availableRoomList tr.roomtype p {
+	color: #444;
+}
+
+#availableRoomList th, #availableRoomList td, #availableRoomList td.roomdetailBottomTableCol2 div
+	{
+	border-color: #A4A39E;
+}
+
+#availableRoomList tr.roomtype th {
+	border-bottom-color: #FFF;
+}
+
+table.roomdetailBottomTable {
+	border-color: #B0B1B4;
+}
+
+#mirai_roomSelection, #currencyWrapper {
+	background-color: #FFFFFE;
+}
+
+#availableRoomList tr.roomratedetail, .roomtypedetail,
+	#availableRoomList tr.roomratedetail {
+	background-color: #FFFFFE;
+}
+
+#availableRoomList table.alert tr.roomratedetail, #availableRoomList table.alert tr.roomratedetail td
+	{
+	background-color: #FFFFB3 !important;
+}
+/* end: general */
+/* start: roomtypedetail */
+#availableRoomList tr.roomtypedetail td {
+	background-color: #FFFFFE;
+}
+
+#availableRoomList div.roomtypedetail li, #availableRoomList table.roomdetailBottomTable li
+	{
+	list-style: square;
+	color: #83eaf1;
+}
+
+#availableRoomList div.roomtypedetail li.inforooms_liSub span {
+	color: #666;
+}
+/* end: roomtypedetail */
+/* start: currency */
+#currencyDropdownContents {
+	background-color: #FFFFFE;
+	border-color: #ccc;
+}
+
+#currencyDropdownContents li.actualCurrency a {
+	background-color: #f7f6a0;
+}
+
+#currencyDropdownContents hr {
+	background-color: #ccc;
+}
+/* end: currency */
+/* start: selectionSummary */
+#mirai_rootTable #summaryHeader {
+	background-color: #A4A39E;
+	border-color: #A4A39E;
+	color: #FFFFFE;
+}
+
+#mirai_rootTable #summaryDetailHeader {
+	color: #FFFFFE;
+	background-color: #CAC9C5;
+	border-color: #CAC9C5;
+}
+
+#mirai_rootTable #summaryContainer {
+	border-color: #A4A39E;
+	background-color: #FFFFFE;
+}
+
+#mirai_totalPrice {
+	color: #333;
+}
+
+#mirai_rootTable #summaryNote, #mirai_rootTable #taxDetails,
+	#mirai_rootTable .summary_type {
+	color: #888;
+}
+
+#mirai_rootTable #summaryContainer, #mirai_rootTable #summaryElements {
+	background-color: #FFFFFE; }
+	/* end: selectionSummary */
+	/* start: searching overlay */
+	#mirai_overlay {
+	background-color: #000;
+}
+
+#mirai_loadingBox {
+	background-color: #fff;
+	color: #666;
+}
+/* end: searching overlay */
+/*start: tooltip style*/
+.ui-tooltip-mirai .ui-tooltip-titlebar, .ui-tooltip-mirai .ui-tooltip-content
+	{
+	border-color: #ADD9ED !important;
+	color: #5E99BD !important;
+}
+
+#mirai_rootTable .ui-tooltip-mirai .ui-tooltip-content {
+	background-color: #E5F6FE !important;
+}
+
+#mirai_rootTable .ui-tooltip-mirai .ui-tooltip-titlebar {
+	background-color: #D0E9F5 !important;
+}
+/*end: tooltip style*/
+/*start: searching dialogue box*/
+.ui-widget-content {
+	border: 2px solid #888;
+	color: #222;
+}
+
+.ui-widget-header {
+	border: none;
+	background: #fff; /* Para el calendario*/
+}
+/*end: searching dialogue box*/
+/*start: searching table#mirai_associatedHotels*/
+#mirai_associatedHotels {
+	border-color: #A4A39E;
+}
+
+#mirai_associatedHotels .trOdd {
+	background-color: #E9E8E6;
+}
+/*end: searching table#mirai_associatedHotels*/
+dl.dropdown dd {
+	border-right: 1px solid #7B7C7D;
+	overflow: hidden;
+}
+
+#mirai_roomSelectionContainer {
+	width: 100%;
+}
+
+#availableRoomList tr.roomrate td.col1 {
+	width: 0;
+}
+
+dl.dropdown dt {
+	color: #000000;
+}
+
+dl.dropdown dt.focus {
+	background: #FFFFFF;
+}
+
+#content p {
+	margin: 0;
+}
+
+#mirai_roomSelection, #currencyWrapper {
+	background-color: transparent;
+}
+
+html {
+	background: transparent;
+}
+
+body {
+	background: #ffffff !important;
+	font-family:'Open Sans', Arial, Helvetica, sans-serif !important;
+}
+
+#logo {
+    margin: 0 auto;
+    
+}
+
+@media (min-width: 768px) {
+#logo {
+    margin: 0 auto;
+    width: 200px;
+    /*background-color: red;*/
+    float: left;
+}
+}
+
+@media (min-width: 992px) {
+#logo {
+    margin: 0 auto;
+    width: 200px;
+    /*background-color: green;*/
+    float: left;
+}
+}
+
+@media (min-width: 1200px) {
+#logo {
+    margin: 0 auto;
+    width: 300px;
+    /*background-color: blue;*/
+    float: left;
+}
+}
+
+#logo a {
+	background: url("/images/logotipo.png") no-repeat 0 0 transparent;
+	display: block;
+	height: 113px;
+	margin: 0 auto;
+	text-indent: -999999px;
+	width: 337px;
+}
+
+#header {
+	width: 100%;
+    display: table;
+}
+
+
+@media (min-width: 768px) {
+#header {
+	width: 750px;
+    margin: 0 auto;
+    background-color: white;
+    display: table;
+}
+}
+
+@media (min-width: 992px) {
+#header {
+	width: 970px;
+    margin: 0 auto;
+    background-color: white;
+    display: table;
+}
+}
+
+@media (min-width: 1200px) {
+#header {
+	width: 1170px;
+    margin: 0 auto;
+    background-color: white;
+    display: table;
+}
+}
+
+#container {
+	margin: 0 auto;
+	width: 980px;
+}
+
+
+#mirai_bookentrance {
+    background: #f2f2f2;
+    /*box-shadow: 2px 2px 4px #555555 inset;*/
+    /* margin-top: 20px; */
+    padding: 10px 0;
+}
+
+#mirai_be2, #mirai_be4, #mirai_be6 {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 3px !important;
+}
+
+#mirai_be7 input {
+	background: rgb(132, 133, 127);
+	background: -moz-linear-gradient(top, rgba(132, 133, 127, 1) 0%,
+		rgba(51, 51, 51, 1) 85%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(132,
+		133, 127, 1)), color- stop(85%, rgba(51, 51, 51, 1)));
+	background: -webkit-linear-gradient(top, rgba(132, 133, 127, 1) 0%,
+		rgba(51, 51, 51, 1) 85%);
+	background: -o-linear-gradient(top, rgba(132, 133, 127, 1) 0%,
+		rgba(51, 51, 51, 1) 85%);
+	background: -ms-linear-gradient(top, rgba(132, 133, 127, 1) 0%,
+		rgba(51, 51, 51, 1) 85%);
+	background: linear-gradient(top, rgba(132, 133, 127, 1) 0%,
+		rgba(51, 51, 51, 1) 85%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84857f',
+		endColorstr='#333333', GradientType=0);
+	border: 0;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	padding: 5px 12px;
+}
+
+#mirai_be7 input:hover {
+	background: rgb(51, 51, 51);
+	background: -moz-linear-gradient(top, rgba(51, 51, 51, 1) 15%,
+		rgba(132, 133, 127, 1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(51,
+		51, 51, 1)), color- stop(100%, rgba(132, 133, 127, 1)));
+	background: -webkit-linear-gradient(top, rgba(51, 51, 51, 1) 15%,
+		rgba(132, 133, 127, 1) 100%);
+	background: -o-linear-gradient(top, rgba(51, 51, 51, 1) 15%,
+		rgba(132, 133, 127, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(51, 51, 51, 1) 15%,
+		rgba(132, 133, 127, 1) 100%);
+	background: linear-gradient(top, rgba(51, 51, 51, 1) 15%,
+		rgba(132, 133, 127, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333',
+		endColorstr='#84857f', GradientType=0);
+}
+
+.ui-datepicker .ui-datepicker-header, .ui-datepicker .ui-datepicker-buttonpane button,
+	.ui-datepicker td:hover a {
+	background: #8AD1FF !important;
+	color: #333333 !important;
+}
+
+#ui-datepicker-div {
+	font-size: 14px !important;
+}
+
+#menu {
+	display:none;
+}
+
+@media (min-width: 768px) {
+#menu {
+    /*background-color: red;*/
+    width: 530px;
+    display: inline-block;
+    margin-top: 30px;
+}
+}
+
+@media (min-width: 992px) {
+#menu {
+    /*background-color: green;*/
+    width: 530px;
+    display: inline-block;
+    margin-top: 30px;
+}
+}
+
+@media (min-width: 1200px) {
+#menu {
+    /*background-color: blue;*/
+    width: 530px;
+    display: inline-block;
+    margin-top: 30px;
+}
+}
+
+
+
+#menu ul {margin:0; padding:0;}
+#menu li {list-style:none;}
+#menu li a:link {display:block; margin-right:12px; padding:6px; float:left;}
+
+.f-hotel {
+    min-height: 300px;
+    background: #f2f2f2 url(../images/hotel/top-hotel.png) center no-repeat;
+    background-size: cover;
+}
+
+.pie {padding:12px 0;}
+
+#cartSummary {margin-bottom:12px;}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #c59d5f;
+    text-decoration: underline;
+}
+
+.r-social {margin:15px 0; padding:0 20px; float:right; display:inline-block;}
+.r-social li {list-style:none; float:left; margin-right:12px; line-height: 2;}
+
+.contenedor {display: table;
+    width: 100%;
+    border-bottom: solid 1px #999999;}
+
+#h-social {
+	width: 100%;
+    display: table;
+}
+
+
+@media (min-width: 768px) {
+#h-social {
+	width: 750px;
+    margin: 0 auto;
+    background-color: white;
+    display: table;
+}
+}
+
+@media (min-width: 992px) {
+#h-social {
+	width: 970px;
+    margin: 0 auto;
+    background-color: white;
+    display: table;
+}
+}
+
+@media (min-width: 1200px) {
+#h-social {
+	width: 1170px;
+    margin: 0 auto;
+    background-color: white;
+    display: table;
+}
+}
+
+#mirai_extra h2 {color:#c59d5f !important;}
+#mirai_extra h3 {
+    color: #393939;
+    font-size: 14px;
+	font-weight:bold;
+    width: auto;
+}
+
+.lastRoom {
+    background-color: #d90000;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 300;
+    margin-top: 0;
+    padding: 3px;
+    position: relative;
+    top: -2px;
+}
+
+#mirai_rootTable a, #currencyDropdownTop a span, #mirai_selectionSummary a {
+    color: #1E4190;
+}
+
+.inforoom_nav li.closeRoomInfo span {
+    background-color: #d90000;
+    background-image: url("../images/bt-overlay.png");
+    background-repeat: repeat-x;
+    border-radius: 3px;
+    color: #fffffe;
+    margin-right: 4px;
+    padding: 0 5px 1px;
+}
+
+#mirai_rootTable .inforoom_nav li.closeRoomInfo a {
+    color: #D90000;
+}
+
+#mirai_totalPrice span {
+    color: #b12704 !important;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.scrolltop {
+    bottom: 20px;
+    display: none;
+    
+    left: auto;
+    overflow: hidden;
+    padding: 17px 16px;
+    position: fixed;
+    right: 20px;
+    top: auto;
+    
+    z-index: 90;
+}
